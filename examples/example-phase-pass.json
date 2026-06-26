@@ -1,0 +1,9 @@
+{
+  "phaseId": "OCF-DEMO-001",
+  "title": "Prompt Governance Documentation Update",
+  "summary": "Adds documentation-only guidance for safe prompt governance.",
+  "gateState": "review_required",
+  "humanApprovalRequired": true,
+  "irreversibleAction": false,
+  "evidence": ["README updated", "Policy example added"]
+}
