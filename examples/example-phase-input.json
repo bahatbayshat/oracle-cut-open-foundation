@@ -1,0 +1,8 @@
+{
+  "phaseName": "Open Foundation Example",
+  "providerCallsAllowed": false,
+  "mediaGenerationAllowed": false,
+  "autoApprovalAllowed": false,
+  "humanApprovalRequired": true,
+  "evidenceProvided": true
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://oracle-cut-open-foundation.dev/schemas/safety-gate.schema.json",
+  "title": "SafetyGateInput",
+  "type": "object",
+  "required": [
+    "phaseName",
+    "providerCallsAllowed",
+    "mediaGenerationAllowed",
+    "autoApprovalAllowed",
+    "humanApprovalRequired",
+    "evidenceProvided"
+  ],
+  "properties": {
+    "phaseName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "providerCallsAllowed": {
+      "type": "boolean"
+    },
+    "mediaGenerationAllowed": {
+      "type": "boolean"
+    },
+    "autoApprovalAllowed": {
+      "type": "boolean"
+    },
+    "humanApprovalRequired": {
+      "type": "boolean"
+    },
+    "evidenceProvided": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

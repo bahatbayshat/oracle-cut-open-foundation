@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://oracle-cut-open-foundation.dev/schemas/phase-report.schema.json",
+  "title": "PhaseReport",
+  "type": "object",
+  "required": [
+    "project",
+    "phase",
+    "createdAt",
+    "verification",
+    "summary"
+  ],
+  "properties": {
+    "project": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "phaseName",
+        "status",
+        "findings"
+      ],
+      "properties": {
+        "phaseName": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "pass",
+            "fail"
+          ]
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

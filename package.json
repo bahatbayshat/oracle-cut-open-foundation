@@ -1,0 +1,20 @@
+{
+  "name": "oracle-cut-open-foundation",
+  "version": "0.1.0",
+  "description": "Open-source safety, verification, and prompt governance toolkit for AI-assisted creative and cinematic workflows.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "verify": "npm run typecheck && npm test"
+  },
+  "keywords": ["ai-safety", "prompt-governance", "verification", "creative-tools", "cinematic-workflow"],
+  "author": "Bahat Bayshat",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
